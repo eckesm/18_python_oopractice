@@ -22,10 +22,14 @@ class SerialGenerator:
     """
 
     def __init__(self, start):
+        """Make a new generator, starting at start"""
+
         self.start = start
         self.index = 0
 
     def __repr__(self):
+        """Show representation."""
+        
         return f"<SerialGenerator start={self.start} index={self.index}>"
 
     def generate(self):
